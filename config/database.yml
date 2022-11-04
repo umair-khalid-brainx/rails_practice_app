@@ -13,4 +13,6 @@ test:
 
 production:
     <<: *default
-    database: simple_store_production
+    database: simple_store__production
+    username: simple_store_
+    password: <%= ENV['SIMPLE_STORE_DATABASE_PASSWORD'] %>

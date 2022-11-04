@@ -1,0 +1,1 @@
+json.array! @products, :email, :full_name

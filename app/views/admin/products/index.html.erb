@@ -1,0 +1,11 @@
+<h1>Products</h1>
+<%# image_path("/app/assets/darthvader.jpg") %>
+<%#= image_tag("darthvader.jpg") %>
+<% content_for :special_script do %>
+  <script>alert('Hello!')</script>
+  <%= date_select("product", "published_on") %>
+  <%= datetime_select("product", "published_on") %>
+<% end %>
+<%= render "prod", layout: 'box', products: @product, spacer_template: "prod1" %>
+
+
